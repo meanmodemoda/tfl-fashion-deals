@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion M&As and Deals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,900&family=Fredoka+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </link>
+</head>
+
+<body>
+    <div id="container">
+        <div class="header">
+            <h1 class="assignment">Fashion Blog <br>Transactions</h1>
+            <h1 class="ghibli">Deals</h1>
+        </div>
+        <div id="app">
+            <div class="filter">
+                <h1>Filter Titles by Keyword.</h1>
+                <form @submit='searchDeals'>
+                    <input type="text" v-model="searchQueryInput"
+                        placeholder="search keyword in title or description" />
+                    <input id="submit" type="submit" value="Enter" /><input type="reset" @click="reset" value="Reset" />
+                </form>
+            </div>
+            <!--{{ JSON.stringify(films) }}-->
+
+            <title-block v-for='deal in resultQuery' :title="deal.title" :country="deal.country"
+                :content="deal.content"> </title-block>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3.0.0"></script>
+    <script src="./app.js" type='module'></script>
+</body>
+
+</html>
