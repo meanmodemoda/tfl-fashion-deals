@@ -1,3 +1,13 @@
+@font-face { font-family: "ObjectSans-Bold"; 
+  src: url("./assets/ObjectSans-Bold.woff") format("woff");
+  /* font-stretch: 25% 151%; */
+  } 
+  @font-face { font-family: "ObjectSans-Regular"; 
+    src: url("./assets/ObjectSans-Regular.woff") format("woff");
+    /* font-stretch: 25% 151%; */
+    } 
+
+   
 html {
   font-size: 14px;
   /*font-family: 'Arial', sans-serif;*/
@@ -22,50 +32,46 @@ box-sizing: inherit;
 }
 
 .ghibli {
-font-family: 'Fredoka One', cursive;
+font-family: "ObjectSans-Regular", cursive;
 padding: 0 1rem;
-color: white;
+color: black;
 display: block;
 float: left;
 }
     
 .assignment {
-font-family: 'Fredoka One', cursive;
+font-family:  "ObjectSans-Regular", cursive;
 padding: 0 1rem;
-color: white;
+color: black;
 display: block;
 float: right;
 font-size: 1.5rem;
 }
     
 
-.header> h1 {
-font-family: 'Fredoka One';
-color: white;
-text-align: right;
+#filter > h1 {
+font-family:  "ObjectSans-Regular";
+color: black;
+text-align: left;
 }
 
 .header> h2 {
-font-family: 'Nunito';
+font-family: 'ObjectSans-Regular';
 color: orange;
 }
 
-.filter> h1 {
-font-family: 'Fredoka One';
-color: orange;
-}
-
-.filter>p, h2, h3 {
-font-family:'Fredoka One', sans-serif; 
+#filter>p, h2, h3 {
+font-family: "ObjectSans-Regular", sans-serif; 
 color: orange;
 }
 
 li, p {
-font-family: 'Nunito', sans-serif;  
-color: white;
+font-family: "Inter", sans-serif;  
+color: black;
+font-weight: 200;
 }
 
-.filter {
+#filter {
     padding: 1% 5%;
 }
 
@@ -82,65 +88,71 @@ input[type=text] {
 
  input:focus {
     outline:none;
-    font-family: 'Nunito', sans-serif; 
+    font-family: "NeueMontreal-Regular", sans-serif; 
     font-size: 1rem;
-    color: white;
+    color: black;
  }
         
 ::placeholder {
- font-family: 'Nunito', sans-serif;  
+ font-family:"NeueMontreal-Regular", sans-serif;  
  font-size: 1rem;
- color: white;
+ color: black;
 }
 
 input:after {
- font-family: 'Nunito', sans-serif;  
+ font-family: "NeueMontreal-Regular", sans-serif;  
  font-size: 1rem;
- color: white;
+ color: black;
 }
 
 input[type=submit], select {
   width: 10%;
   background-color: orange;
-  color: white;
+  color: black;
   padding: 14px 20px;
   margin: 8px 4px;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-family: 'Fredoka One', sans-serif; 
+  font-family: "NeueMontreal-Regular", sans-serif; 
 }
 
 input[type=reset] {
   width: 10%;
   background-color: grey;
-  color: white;
+  color: black;
   padding: 14px 20px;
   margin: 8px 4px;
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  font-family: 'Fredoka One', sans-serif; 
+  font-family: 'ObjectSans-Regular', sans-serif; 
 }
 
 input[type=submit]:hover {
-  background-color: white;
+  background-color: grey;
   color: orange;
 }
 
 
 input[type=reset]:hover {
- background-color: white;
+ background-color: black;
  color: grey;
 }
 
 #deal {
     padding: 1% 5%;
+    display: block;
 }
 
 
 #container {
  width: 100%;
- background-color: #3898ca;
- color: white;
+ background-color: white;
+ color: black;
+}
+
+#app{
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
