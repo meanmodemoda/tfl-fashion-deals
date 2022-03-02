@@ -156,3 +156,11 @@ input[type=reset]:hover {
   display: grid;
   grid-template-columns: 30% 70%;
 }
+
+#left {
+  background-color: blue;
+}
+
+#industry {
+  width: 50%;
+}
