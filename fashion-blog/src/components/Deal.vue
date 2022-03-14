@@ -8,7 +8,6 @@
 
 <script>
 export default {
-  name: "dealBlock",
   props: ["title", "country", "content"],
   data() {
     return {};
